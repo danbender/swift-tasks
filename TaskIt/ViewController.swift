@@ -1,8 +1,13 @@
 import UIKit
+import CoreData
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
 
     @IBOutlet weak var tableView: UITableView!
+    
+    let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext!
+    var fetchedResultsController:NSFetchedResultsController = NSFetchedResultsController()
+    
     
     var baseArray:[[TaskModel]] = []
     
@@ -107,6 +112,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
         baseArray[indexPath.section].removeAtIndex(indexPath.row)
         tableView.reloadData()
+        
+//        Helper
+        
+        func taskFetchRequest() -> NSFetchRequest {
+            let fetchRequest = NSFetchRequest(entityName: "TaskModel")
+            let sortDescriptor = NSSortDescriptor(key: "date", ascending: true)
+            
+            fetchRequest.sortDescriptors = [sortDescriptor]
+            
+            return fetchRequest
+        }
 
     }
     
