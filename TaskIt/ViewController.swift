@@ -1,7 +1,7 @@
 import UIKit
 import CoreData
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate  {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -14,6 +14,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        fetchedResultsController = getFetchedResultsController()
+        fetchedResultsController.delegate = self
+        
+        fetchedResultsController.performFetch(nil)
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -122,6 +126,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             fetchRequest.sortDescriptors = [sortDescriptor]
             
             return fetchRequest
+        }
+        
+        func getFetchedResultsController() -> NSFetchedResultsController {
+            fetchedResultsController = NSFetchedResultsController(fetchRequest: taskFetchRequest(), managedObjectContext: managedObjectContext, sectionNameKeyPath: nil, cacheName: nil)
+            return fetchedResultsController
         }
 
     }
