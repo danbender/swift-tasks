@@ -9,20 +9,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let date1 = Date.from(year: 2015, month: 08, day: 15)
-        let date2 = Date.from(year: 2015, month: 07, day: 15)
-        let date3 = Date.from(year: 2015, month: 01, day: 01)
-        
-        let task1 = TaskModel(task : "Study French", subTask: "Verbs", date: date1, completed: false)
-        let task2 = TaskModel(task: "Eat Dinner", subTask: "Burgers", date: date2, completed: false)
-        
-        // alternatively create instances directly in array:
-        let taskArray = [task1, task2, TaskModel(task: "Gym", subTask: "Leg day", date: date3, completed: false)]
-        var completedArray = [TaskModel(task:"Code", subTask:"Task Project", date:date2, completed:true)]
-        baseArray = [taskArray, completedArray]
-        
-        
-        self.tableView.reloadData()
     }
     
     override func viewDidAppear(animated: Bool) {
