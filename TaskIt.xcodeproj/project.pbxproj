@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		373293C41B80D45200408B9D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373293C31B80D45200408B9D /* CoreData.framework */; };
 		37401B641B7DB486009FBD7F /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37401B631B7DB486009FBD7F /* Date.swift */; };
 		3758E4A51B79377A00CD7D90 /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3758E4A41B79377A00CD7D90 /* TaskDetailViewController.swift */; };
 		378B90941B7F857600B2C215 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378B90931B7F857600B2C215 /* AddTaskViewController.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		373293C31B80D45200408B9D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		37401B631B7DB486009FBD7F /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		3758E4A41B79377A00CD7D90 /* TaskDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
 		378B90931B7F857600B2C215 /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				373293C41B80D45200408B9D /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +108,7 @@
 		37BB9BDE1B76776E00899248 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				373293C31B80D45200408B9D /* CoreData.framework */,
 				37BB9BDF1B76776E00899248 /* Info.plist */,
 			);
 			name = "Supporting Files";
