@@ -119,14 +119,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         func taskFetchRequest() -> NSFetchRequest {
             let fetchRequest = NSFetchRequest(entityName: "TaskModel")
             let sortDescriptor = NSSortDescriptor(key: "date", ascending: true)
+            let completedDescriptor = NSSortDescriptor(key: "completed", ascending: true)
             
-            fetchRequest.sortDescriptors = [sortDescriptor]
+            fetchRequest.sortDescriptors = [completedDescriptor,sortDescriptor]
             
             return fetchRequest
         }
         
         func getFetchedResultsController() -> NSFetchedResultsController {
-            fetchedResultsController = NSFetchedResultsController(fetchRequest: taskFetchRequest(), managedObjectContext: managedObjectContext, sectionNameKeyPath: nil, cacheName: nil)
+            fetchedResultsController = NSFetchedResultsController(fetchRequest: taskFetchRequest(), managedObjectContext: managedObjectContext, sectionNameKeyPath: "completed", cacheName: nil)
             return fetchedResultsController
         }
     
