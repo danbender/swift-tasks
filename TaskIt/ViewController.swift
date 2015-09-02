@@ -88,7 +88,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             let testTask:TaskModel = fetchedObjects[0] as! TaskModel
             
             if testTask.completed == true {
-                return "Cmpleted"
+                return "Completed"
             }
             else {
                 return "To do"
