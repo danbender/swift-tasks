@@ -42,6 +42,7 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
         self.navigationController?.popViewControllerAnimated(true)
     }
     
+//    set up tableViews
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         if tableView == self.capitalizeTableView {
@@ -90,7 +91,21 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
         }
     }
 
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
+    }
     
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 30
+    }
     
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if tableView == self.capitalizeTableView {
+            return "Capitalize New Task?"
+        }
+        else {
+            return "Completew New Task"
+        }
+    }
     
 }
