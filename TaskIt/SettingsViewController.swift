@@ -104,7 +104,7 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
             return "Capitalize New Task?"
         }
         else {
-            return "Completew New Task"
+            return "Complete New Task"
         }
     }
     
