@@ -8,9 +8,6 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
     
     let kVersionNumber = "1.0"
     
-    let kShouldCapitalizeTaskKey = "shouldCapitalizeTask"
-    let kShouldCompleteNewTodoKey = "completeNewTodo"
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -104,8 +101,38 @@ class SettingsViewController: UIViewController, UITableViewDataSource, UITableVi
             return "Capitalize New Task?"
         }
         else {
-            return "Complete New Task"
+            return "Complete New Task?"
         }
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if tableView == self.capitalizeTableView {
+            if indexPath.row == 0 {
+                NSUserDefaults.standardUserDefaults().setBool(false, forKey: kShouldCapitalizeTaskKey)
+            }
+            else {
+                NSUserDefaults.standardUserDefaults().setBool(true, forKey: kShouldCapitalizeTaskKey)
+            }
+        }
+        else {
+            if indexPath.row == 0 {
+                NSUserDefaults.standardUserDefaults().setBool(false, forKey: kShouldCompleteNewTodoKey)
+            }
+            else {
+                NSUserDefaults.standardUserDefaults().setBool(true, forKey: kShouldCompleteNewTodoKey)
+            }
+        }
+        
+        NSUserDefaults.standardUserDefaults().synchronize()
+        tableView.reloadData()
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     
 }
