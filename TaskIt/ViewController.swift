@@ -1,7 +1,7 @@
 import UIKit
 import CoreData
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate  {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate, TaskDetailViewControllerDelegate  {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -33,6 +33,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             let indexPath = self.tableView.indexPathForSelectedRow()
             let thisTask = fetchedResultsController.objectAtIndexPath(indexPath!) as! TaskModel
             detailVC.detailTaskModel = thisTask
+            
+//            conform to TaskDetailViewControllerDelegate
+            detailVC.delegate = self
         }
         else if segue.identifier == "showTaskAdd" {
             let addTaskVC:AddTaskViewController = segue.destinationViewController as! AddTaskViewController
@@ -144,6 +147,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             fetchedResultsController = NSFetchedResultsController(fetchRequest: taskFetchRequest(), managedObjectContext: managedObjectContext, sectionNameKeyPath: "completed", cacheName: nil)
             return fetchedResultsController
         }
+    
+    
+//    TaskDetailViewControllerDelegate
+    
+    func taskDetailEdited() {
+        println("taskDetailEdited()")
+    }
     
 }
 
