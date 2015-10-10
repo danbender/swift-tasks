@@ -1,14 +1,24 @@
 import UIKit
 import CoreData
 
+protocol AddTaskViewControllerDelegate {
+    func addTask(message:String)
+    func addTaskCanceled(message:String)
+}
+
 class AddTaskViewController: UIViewController {
         
     @IBOutlet weak var taskTextField: UITextField!
     @IBOutlet weak var subTaskTextField: UITextField!
     @IBOutlet weak var dueDatePicker: UIDatePicker!
+    
+    var delegate:AddTaskViewControllerDelegate?
 
     @IBAction func cancelButtonTapped(sender: UIButton) {
+        
+        delegate?.addTaskCanceled("Task was not added!")
         self.dismissViewControllerAnimated(true, completion: nil)
+        
     }
     
     @IBAction func addTaskButtonTapped(sender: UIButton) {
@@ -49,11 +59,12 @@ class AddTaskViewController: UIViewController {
         var error:NSError? = nil
 //        & optimization only create memory space when needed; here: in case of error.
         var results:NSArray = managedObjectContext!.executeFetchRequest(request, error: &error)!
+        
         for res in results {
             println(res)
         }
         
-        
+        delegate?.addTask("Task added!")
         
         self.dismissViewControllerAnimated(true, completion: nil)
         
