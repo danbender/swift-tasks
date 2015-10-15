@@ -275,10 +275,10 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NI-Ju-ED8">
-                                <rect key="frame" x="20" y="26" width="48" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NI-Ju-ED8">
+                                <rect key="frame" x="9" y="15" width="74" height="51"/>
                                 <animations/>
-                                <state key="normal" title="Cancel">
+                                <state key="normal" image="CancelButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -319,4 +319,7 @@
             <point key="canvasLocation" x="329" y="1050"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CancelButton" width="120" height="76"/>
+    </resources>
 </document>
