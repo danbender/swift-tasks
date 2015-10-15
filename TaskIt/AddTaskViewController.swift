@@ -13,6 +13,13 @@ class AddTaskViewController: UIViewController {
     @IBOutlet weak var dueDatePicker: UIDatePicker!
     
     var delegate:AddTaskViewControllerDelegate?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+//        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Background")!)
+    }
+
 
     @IBAction func cancelButtonTapped(sender: UIButton) {
         

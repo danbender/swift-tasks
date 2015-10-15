@@ -16,6 +16,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         fetchedResultsController.delegate = self
         fetchedResultsController.performFetch(nil)
         
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Background")!)        
     }
     
     override func viewDidAppear(animated: Bool) {
