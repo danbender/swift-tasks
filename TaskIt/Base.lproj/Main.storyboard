@@ -497,7 +497,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ul8-EW-fSW">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ul8-EW-fSW">
                                 <rect key="frame" x="232" y="26" width="64" height="30"/>
                                 <animations/>
                                 <constraints>
@@ -533,7 +533,7 @@
                                     <action selector="addTaskButtonTapped:" destination="wC7-JT-S2w" eventType="touchUpInside" id="vXg-Sm-czD"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CGO-AS-Ob1">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CGO-AS-Ob1">
                                 <rect key="frame" x="16" y="175" width="280" height="30"/>
                                 <animations/>
                                 <constraints>
@@ -567,7 +567,7 @@
                                     </mask>
                                 </variation>
                             </textField>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="cfV-nq-DBq">
+                            <datePicker contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="cfV-nq-DBq">
                                 <rect key="frame" x="0.0" y="252" width="320" height="162"/>
                                 <animations/>
                                 <constraints>
@@ -602,14 +602,14 @@
                                     </mask>
                                 </variation>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subtask" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDC-aA-Uy9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Subtask" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDC-aA-Uy9">
                                 <rect key="frame" x="20" y="153" width="63" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NI-Ju-ED8">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NI-Ju-ED8">
                                 <rect key="frame" x="9" y="15" width="74" height="51"/>
                                 <animations/>
                                 <constraints>
@@ -647,7 +647,7 @@
                                     <action selector="cancelButtonTapped:" destination="wC7-JT-S2w" eventType="touchUpInside" id="FDF-DX-A8a"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1AT-gp-AC6">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1AT-gp-AC6">
                                 <rect key="frame" x="16" y="100" width="280" height="30"/>
                                 <animations/>
                                 <constraints>
@@ -679,14 +679,14 @@
                                     </mask>
                                 </variation>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Task" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tpu-qS-mAW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Task" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tpu-qS-mAW">
                                 <rect key="frame" x="20" y="80" width="35" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="To7-Vn-Pbo">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="To7-Vn-Pbo">
                                 <rect key="frame" x="20" y="222" width="36" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -764,14 +764,14 @@
                                 <exclude reference="Img-z2-lwH"/>
                                 <exclude reference="gQx-xM-klc"/>
                                 <exclude reference="qyu-zK-47K"/>
-                                <exclude reference="9su-N9-gql"/>
-                                <exclude reference="XN4-RF-5Vr"/>
-                                <exclude reference="cC6-qg-nOJ"/>
-                                <exclude reference="r2k-13-lRU"/>
                                 <exclude reference="2lr-nN-fhj"/>
                                 <exclude reference="99s-i5-E0M"/>
                                 <exclude reference="LeU-34-n76"/>
                                 <exclude reference="oxZ-18-ibX"/>
+                                <exclude reference="9su-N9-gql"/>
+                                <exclude reference="XN4-RF-5Vr"/>
+                                <exclude reference="cC6-qg-nOJ"/>
+                                <exclude reference="r2k-13-lRU"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -788,10 +788,10 @@
                                 <include reference="Sjg-4i-xjl"/>
                                 <include reference="sWm-mj-1Kl"/>
                                 <include reference="gQx-xM-klc"/>
-                                <include reference="cC6-qg-nOJ"/>
-                                <include reference="r2k-13-lRU"/>
                                 <include reference="2lr-nN-fhj"/>
                                 <include reference="oxZ-18-ibX"/>
+                                <include reference="cC6-qg-nOJ"/>
+                                <include reference="r2k-13-lRU"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
@@ -809,10 +809,10 @@
                                 <include reference="Nbv-Cb-MUl"/>
                                 <include reference="Img-z2-lwH"/>
                                 <include reference="qyu-zK-47K"/>
-                                <include reference="9su-N9-gql"/>
-                                <include reference="XN4-RF-5Vr"/>
                                 <include reference="99s-i5-E0M"/>
                                 <include reference="LeU-34-n76"/>
+                                <include reference="9su-N9-gql"/>
+                                <include reference="XN4-RF-5Vr"/>
                             </mask>
                         </variation>
                     </view>
