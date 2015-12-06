@@ -181,6 +181,7 @@
 		37BB9BD31B76776E00899248 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Dan Bender";
 				TargetAttributes = {
